@@ -379,7 +379,7 @@
               "[uri(parameters('_artifactsLocation'), concat(variables('scriptLocation'), parameters('_artifactsLocationSasToken')))]",
               "[uri(parameters('_artifactsLocation'), concat(variables('bakFileLocation'), parameters('_artifactsLocationSasToken')))]"
                    ],
-             "scriptParameters": "[concat('-userName ', parameters('sourceWindowsAdminUserName'), ' -password \"', parameters('sourceWindowsAdminPassword'))]"
+             "scriptParameters": "[concat('-userName ', parameters('sourceWindowsAdminUserName'), ' -password ', parameters('sourceWindowsAdminPassword'))]"
           },
           "resources": [
             {
